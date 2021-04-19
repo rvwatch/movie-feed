@@ -1,13 +1,15 @@
 import './App.css';
+import Nav from './Nav';
 import Row from './Row';
 import requests from './request';
 
 function App() {
+  const backgroundPoster = { backgroundImage: 'https://image.tmdb.org/t/p/original/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg'};
   return (
-    <div className="App">
-      <h1>Movie Feed</h1>
+    <div id="App" style={ backgroundPoster }>
+      <Nav />
       <Row title="Comedy" fetchUrl={requests.fetchComedyMovies} />
-      <Row title="Drama" fetchUrl={requests.fetchRomanceMovies} />
+      <Row title="Action" fetchUrl={requests.fetchActionMovies} />
     </div>
   );
 }
