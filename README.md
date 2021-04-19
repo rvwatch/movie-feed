@@ -11,14 +11,15 @@ StoryBook
 Github
 Chrome as my base platform
 
-Went with React as it seems perfectly fit for this type of UI and also happens to be the framework I’m most familiar with. Curious what Charter team prefers for this type of prototype?
+Went with React as it seems perfectly fit for this type of UI and also happens to be the framework I’m most familiar with.
+
 I also implemented some “new to me” technologies as I was confident they wouldn’t slow me down and in fact might help illuminate some unknowns worth keeping in mind in the future.
 
 Storybook, specifically is new tech for me. I’ve heard great things and felt that this might fit with the notion of working with a design system, components, tokens, actions, documentation, etc.
 
-I deployed my prototype using Firebase hosting. I’m familiar with Firebase Auth as I’ve used it in several projects and have been pleased with it’s relative ease of use. Hosting was no different. After logging, I was able to run a few simple CLI commands that prompted me through the deploy process.
+I deployed and hosted the prototype using Firebase. I’m familiar with Firebase Auth as I’ve used it in several projects and have been pleased with it’s relative ease of use. Hosting was no different. After logging into firebase I was able to run a few simple CLI commands that prompted me through the deploy process.
 
-I settled on chrome as I went with my more narrow assumptions of scope for this particular type of prototype. Part of that assumption as that considerations of cross browser compatibility will be a focus later in the app dev cycle.
+I settled on chrome as the main platform to run this SPA. Part of my assumption is that considerations of cross browser compatibility will be a focus later in the app dev cycle.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
