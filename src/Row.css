@@ -1,5 +1,10 @@
 .category_wrap {
-  margin-left: 80px;
+  margin-left: 65px;
+}
+
+.category_wrap h2 {
+  color: #f8f8f8;
+  font-size: 30px;
 }
 
 .row_cards {
@@ -14,9 +19,15 @@
 }
 
 .view_all {
-  align-self: center;
-  margin-right: 5px;
+  margin: 53px 0 0 0;
   height: 170px;
+  background-color: #002134;
+  width: 200px;
+  color: #d9dee2;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 0 40px;
 }
 
 .card_poster {
@@ -28,6 +39,7 @@
 .card_title {
   position: relative;
   align-self: baseline;
+  color: #f8f8f8;
 }
 
 .card_img {
@@ -40,5 +52,5 @@
 
 .card_img:hover {
   transform: scale(1.08);
-  border: 3px solid blue;
+  border: 3px solid #005598;
 }

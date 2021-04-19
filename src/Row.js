@@ -5,34 +5,35 @@ import './Row.css'
 
 
 
-function Row({ title, fetchUrl }) {
+function Row({ title, url }) {
     const [movies, setMovies] = useState([]);
     
-    // need a snippet of code that runs on a condition
     useEffect(() => {
+        // TODO: Move fetchData() into its own api requests file
         const fetchData = async () => {
             try {
-                const response = await fetch(fetchUrl);
+                const response = await fetch(url);
                 const result = await response.json();
-                if(result.results.length){
+                if (result.results.length) {
                     setMovies(result.results);
                 }
                 return result;
             } catch (error) {
-                
+
             }
         }
 
         fetchData();
-    }, [fetchUrl]);
+    }, [url]);
 
     return (
         <div className="category_wrap">
-           <h2>{title}</h2>
-           <div className='row_cards'>
-               <ViewAll />
-               { movies.map((show, index) => <Cards key={show.id} show={show} />) }
-           </div>
+            <h2 id="panel-1" role={title} tabindex="1" aria-labelledby="genre-tv">{title}</h2>
+            
+            <div className='row_cards'>   
+            <ViewAll />
+                {movies.map((show, index) => <Cards key={show.id} show={show} />)}
+            </div>
         </div>
     )
 }

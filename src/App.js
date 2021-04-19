@@ -8,8 +8,8 @@ function App() {
   return (
     <div id="App" style={ backgroundPoster }>
       <Nav />
-      <Row title="Comedy" fetchUrl={requests.fetchComedyMovies} />
-      <Row title="Action" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Featured" url={requests.fetchTrending} />
+      <Row title="Action" url={requests.fetchActionMovies} />
     </div>
   );
 }

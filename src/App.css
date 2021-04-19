@@ -353,3 +353,25 @@ template {
 /**
  * GLOBAL STYLES
  */
+
+html {
+  background: url("https://image.tmdb.org/t/p/original/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg")
+    no-repeat center center fixed;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -5;
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(13, 27, 36, 0.9);
+  z-index: -4;
+}
