@@ -1,4 +1,24 @@
-# Getting Started with Create React App
+Deployed version of the prototype (Movie-Feed):
+
+<https://movie-feed-6a27c.web.app/>
+
+Tech used:
+
+VS Code
+React / hooks
+Firebase - Hosting
+StoryBook
+Github
+Chrome as my base platform
+
+Went with React as it seems perfectly fit for this type of UI and also happens to be the framework I’m most familiar with. Curious what Charter team prefers for this type of prototype?
+I also implemented some “new to me” technologies as I was confident they wouldn’t slow me down and in fact might help illuminate some unknowns worth keeping in mind in the future.
+
+Storybook, specifically is new tech for me. I’ve heard great things and felt that this might fit with the notion of working with a design system, components, tokens, actions, documentation, etc.
+
+I deployed my prototype using Firebase hosting. I’m familiar with Firebase Auth as I’ve used it in several projects and have been pleased with it’s relative ease of use. Hosting was no different. After logging, I was able to run a few simple CLI commands that prompted me through the deploy process.
+
+I settled on chrome as I went with my more narrow assumptions of scope for this particular type of prototype. Part of that assumption as that considerations of cross browser compatibility will be a focus later in the app dev cycle.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,7 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +34,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,7 +44,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `npm eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -65,6 +80,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
