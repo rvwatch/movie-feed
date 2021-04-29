@@ -1,0 +1,6 @@
+export enum ActionType {
+    ADD_SHOWS = 'ADD_SHOWS_GET',
+    ADD_SHOWS_SUCCESS = 'ADD_SHOWS_SUCCESS',
+    ADD_SHOWS_ERROR = 'ADD_SHOWS_ERROR'
+}
+

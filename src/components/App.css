@@ -358,10 +358,6 @@ html {
   background: url("https://image.tmdb.org/t/p/original/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg")
     no-repeat center center fixed;
   background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   z-index: -5;
 }
 
