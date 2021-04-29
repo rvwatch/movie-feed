@@ -11,6 +11,8 @@ export const getShows = (url: string) => {
         try {
             const response = await fetch(url);
             const data = await response.json();
+            console.log(data);
+
             if (data.results.length) {
                 dispatch({
                     type: ActionType.ADD_SHOWS_SUCCESS,

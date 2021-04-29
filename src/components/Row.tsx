@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useSelector } from "../hooks/useTypedSelector";
 import { Cards } from './Cards';
 import { useActions } from "../hooks/useActions";
 import ViewAll from './ViewAll';
@@ -11,10 +10,8 @@ interface RowProps {
 }
 
 
-const Row: React.FC<RowProps> = ({ title, url }: RowProps) => {
-    // const [movies, setMovies] = useState<ShowProps[]>([]);
+const Row: React.FC<RowProps> = (props: RowProps) => {
     const { getShows } = useActions();
-    const { data, loading, error } = useSelector((state) => state.shows)
     useEffect((): void => {
         // TODO: Move fetchData() into its own api request file
 
@@ -31,17 +28,19 @@ const Row: React.FC<RowProps> = ({ title, url }: RowProps) => {
         // }
 
         // fetchData();
-        getShows(url);
-    }, [url]);
+        getShows(props.url);
+    }, [props.url]);
 
-
+    console.log('====================================');
+    console.log(props);
+    console.log('====================================');
     return (
         <div className="category_wrap">
-            <h2>{title}</h2>
+            <h2>{props.title}</h2>
 
             <div className='row_cards'>
                 <ViewAll />
-                {!error && !loading && data.results.map((show: any) => <Cards key={show.id} show={show} />)}
+                {/* {!error && !loading && data.results.map((show: any) => <Cards key={show.id} show={show} />)} */}
             </div>
         </div>
     )
